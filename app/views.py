@@ -43,7 +43,7 @@ def add_header(response):
 
 @app.route('/profile')
 def profile():
-    return "<h1>Welcome to the Profile Page</h1>"
+    return render_template('profile.html')
 
 
 @app.errorhandler(404)

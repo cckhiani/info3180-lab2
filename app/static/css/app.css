@@ -1,3 +1,86 @@
 body {
     padding-top: 5rem;
 }
+
+.profile-card {
+    width: 350px;
+    margin: 40px auto;
+    background: #ffe6f2; /* Light pink background */
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3); /* Soft pink shadow */
+    font-family: 'Arial', sans-serif;
+}
+
+.profile-header {
+    background: #ff66b2; /* Bright pink */
+    padding: 20px;
+    color: white;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.username {
+    font-size: 14px;
+    color: #ffccdd; /* Soft pink */
+}
+
+.profile-bio {
+    padding: 15px;
+    font-size: 14px;
+    color: #7a3b69; /* Dark mauve text */
+    font-style: italic;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background: white;
+    border-top: 2px solid #ffb3d9;
+    border-bottom: 2px solid #ffb3d9;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    margin: 0;
+    color: #ff4081; /* Hot pink */
+}
+
+.stat p {
+    margin: 0;
+    font-size: 12px;
+    color: #aa0066; /* Deep pink */
+}
+
+.profile-footer {
+    padding: 15px;
+    background: white;
+}
+
+.follow-btn {
+    background: #ff4081; /* Hot pink */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    box-shadow: 0 3px 6px rgba(255, 20, 147, 0.3); /* Pink shadow */
+}
+
+.follow-btn:hover {
+    background: #e60073; /* Darker pink */
+    box-shadow: 0 3px 10px rgba(255, 20, 147, 0.5);
+}

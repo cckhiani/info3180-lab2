@@ -41,6 +41,11 @@ def add_header(response):
     return response
 
 
+@app.route('/profile')
+def profile():
+    return "<h1>Welcome to the Profile Page</h1>"
+
+
 @app.errorhandler(404)
 def page_not_found(error):
     """Custom 404 page."""

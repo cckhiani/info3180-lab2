@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile-card">
+    <div class="profile-header">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Photo" class="profile-img">
+        <h2>Chanchal Khiani</h2>
+        <p class="username">@cckhiani</p>
+        <p class="location">Kingston, Jamaica</p>
+        <p class="joined">Joined January, 2025</p>
+    </div>
+
+    <div class="profile-bio">
+        <p>
+            I'm a final year computer science student with a passion for web design.
+        </p>
+    </div>
+
+    <div class="profile-stats">
+        <div class="stat">
+            <h3>20</h3>
+            <p>Posts</p>
+        </div>
+        <div class="stat">
+            <h3>50</h3>
+            <p>Following</p>
+        </div>
+        <div class="stat">
+            <h3>300</h3>
+            <p>Followers</p>
+        </div>
+    </div>
+
+    <div class="profile-footer">
+        <button class="follow-btn">Follow</button>
+    </div>
+</div>
+{% endblock %}

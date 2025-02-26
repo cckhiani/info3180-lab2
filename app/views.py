@@ -40,16 +40,18 @@ def add_header(response):
     response.headers['Cache-Control'] = 'public, max-age=0'
     return response
 
-
-@app.route('/profile')
-def profile():
-    return render_template('profile.html')
-
 def format_date_joined(date):
     if isinstance(date, datetime.date):
         return date.strftime("%b, %Y") 
     else:
         raise ValueError("Input must be a datetime object or date")
+        
+@app.route('/profile')
+def profile():
+    date_joined = datetime.date(2025, 1, 7)
+    formatted_date = format_date_joined(date_joined)
+    return render_template('profile.html', date_joined=formatted_date)
+
         
 @app.errorhandler(404)
 def page_not_found(error):

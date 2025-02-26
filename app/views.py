@@ -1,6 +1,6 @@
 from app import app
 from flask import render_template, request, redirect, url_for, flash
-
+import datetime
 
 ###
 # Routing for your application.
@@ -45,7 +45,12 @@ def add_header(response):
 def profile():
     return render_template('profile.html')
 
-
+def format_date_joined(date):
+    if isinstance(date, datetime.date):
+        return date.strftime("%b, %Y") 
+    else:
+        raise ValueError("Input must be a datetime object or date")
+        
 @app.errorhandler(404)
 def page_not_found(error):
     """Custom 404 page."""
